@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-red-500: hsl(10, 79%, 65%);
+  --color-red-300: hsl(10, 100%, 79%);
+  --color-red-100: hsl(26, 66%, 93%);
+  --color-brown-950: hsl(25, 47%, 15%);
+  --color-brown-400: hsl(28, 10%, 53%);
+  --color-blue-300: hsl(186, 34%, 65%);
+  --color-blue-200: hsl(186, 48%, 83%);
+
+  --font-family: 'DM Sans', sans-serif;
+
+  --text-preset-1: normal 700 48px/130% 'DM Sans', sans-serif;
+  --text-preset-2: normal 700 32px/130% 'DM Sans', sans-serif;
+  --text-preset-3: normal 700 24px/130% 'DM Sans', sans-serif;
+  --text-preset-4-bold: normal 700 18px/125% 'DM Sans', sans-serif;
+  --text-preset-4-regular: normal 400 18px/125% 'DM Sans', sans-serif;
+  --text-preset-5-bold: normal 700 15px/135% 'DM Sans', sans-serif;
+  --text-preset-5-regular: normal 400 15px/135% 'DM Sans', sans-serif;
+  --text-preset-6: normal 400 12px/135% 'DM Sans', sans-serif;
+}
