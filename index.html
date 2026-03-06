@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Frontend Mentor | Expenses chart component</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="component">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+      <section class="balance">
+        <div class="balance__info">
+          <p class="balance__label">My balance</p>
+          <p class="balance__amount">$921.48</p>
+        </div>
+        <img class="balance__logo" src="./images/logo.svg" alt="">
+      </section>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <section class="spending">
+        <h2 class="spending__title">Spending - Last 7 days</h2>
+        <div class="chart">
+          <div class="chart__bar-wrapper">
+            <div class="chart__bar"></div>
+            <span class="chart__day">mon</span>
+          </div>
+          <div class="chart__bar-wrapper">
+            <div class="chart__bar"></div>
+            <span class="chart__day">tue</span>
+          </div>
+          <div class="chart__bar-wrapper">
+            <div class="chart__bar"></div>
+            <span class="chart__day">wed</span>
+          </div>
+          <div class="chart__bar-wrapper">
+            <div class="chart__bar"></div>
+            <span class="chart__day">thu</span>
+          </div>
+          <div class="chart__bar-wrapper">
+            <div class="chart__bar"></div>
+            <span class="chart__day">fri</span>
+          </div>
+          <div class="chart__bar-wrapper">
+            <div class="chart__bar"></div>
+            <span class="chart__day">sat</span>
+          </div>
+          <div class="chart__bar-wrapper">
+            <div class="chart__bar"></div>
+            <span class="chart__day">sun</span>
+          </div>
+        </div>
+        <div class="spending__summary">
+          <div class="spending__month">
+            <p class="spending__label">Total this month</p>
+            <p class="spending__total">$478.33</p>
+          </div>
 
-  My balance
-  $921.48
+          <div class="spending__comparison">
+            <p class="spending__percent">+2.4%</p>
+            <p class="spending__text">from last month</p>
+          </div>
+        </div>
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
+      </section>
+      <p class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    Coded by <a href="https://github.com/arne-witteler">Arne Witteler</a>.
+  </p>
+    </main>
+  </body>
 </html>
