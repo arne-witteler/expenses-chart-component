@@ -7,9 +7,15 @@
   font-family: var(--font-family);
 }
 
+html, body {
+  background-color: var(--color-red-100);
+}
+
 .component {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
   padding: 64px 16px;
   background-color: var(--color-red-100);
@@ -23,6 +29,7 @@
   color: var(--color-white);
   padding: 16px;
   border-radius: 10px;
+  width: 100%;
 }
 
 .balance__label {
@@ -39,6 +46,7 @@
   background-color: var(--color-white);
   padding: 24px 16px;
   border-radius: 10px;
+  width: 100%;
 }
 
 .spending__title {
@@ -70,8 +78,16 @@
   border-radius: 3px;
 }
 
+.chart__bar:hover {
+  background-color: var(--color-red-300);
+}
+
 .chart__bar--highest {
   background-color: var(--color-blue-300);
+}
+
+.chart__bar--highest:hover {
+  background-color: var(--color-blue-200);
 }
 
 .chart__day {
@@ -84,6 +100,11 @@
   grid-template-columns: 1fr auto;
   align-items: end;
   gap: 0.25rem;
+}
+
+.spending__label {
+  font: var(--text-preset-4-regular);
+  color: var(--color-brown-400);
 }
 
 .spending__total {
@@ -115,4 +136,51 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .component {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .balance {
+    padding: 24px 32px;
+  }
+
+  .balance__label {
+    font: var(--text-preset-4-regular);
+  }
+
+  .balance__amount {
+    font: var(--text-preset-2);
+  }
+
+  .spending {
+    padding: 32px 40px;
+  }
+
+  .spending__title {
+    font: var(--text-preset-2);
+  }
+
+  .chart__bar {
+    width: 50px;
+  }
+
+  .chart__day {
+    font: var(--text-preset-5-regular);
+  }
+
+  .spending__label {
+    font: var(--text-preset-4-regular);
+  }
+
+  .spending__percent {
+    font: var(--text-preset-4-bold);
+  }
+
+  .spending__text {
+    font: var(--text-preset-4-regular);
+  }
 }
