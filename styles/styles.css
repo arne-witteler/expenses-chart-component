@@ -52,12 +52,13 @@
   justify-content: space-between;
   margin-bottom: 24px;
   border-bottom: 2px solid var(--color-red-100);
-  padding-bottom: 24px; 
+  padding-bottom: 24px;
 }
 
 .chart__bar-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   gap: 8px;
 }
@@ -67,6 +68,10 @@
   width: 33px;
   height: 50px;
   border-radius: 3px;
+}
+
+.chart__bar--highest {
+  background-color: var(--color-blue-300);
 }
 
 .chart__day {
