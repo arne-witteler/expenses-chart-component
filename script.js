@@ -9,13 +9,13 @@ fetch("/data.json").then((response) => {
 
 const updateBars = (key) => {
   const bars = document.querySelectorAll(".chart__bar");
-  console.log(bars);
+  const highestAmount = Math.max(...expenses.map(expense => expense.amount));
 
   bars.forEach((bar, index) => {
     const amount = expenses[index][key];
     const percentage = amount * 3;
-    const highestAmount = Math.max(...expenses.map(expense => expense.amount));
     bar.style.height = `${percentage}px`;
+    bar.dataset.amount = amount;
 
     if (amount === highestAmount) {
       bar.classList.add("chart__bar--highest");

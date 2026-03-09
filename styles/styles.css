@@ -72,14 +72,33 @@ html, body {
 }
 
 .chart__bar {
+  position: relative;
   background-color: var(--color-red-500);
   width: 33px;
   height: 50px;
   border-radius: 3px;
 }
 
+.chart__bar::before {
+  content: "$" attr(data-amount);
+  position: absolute;
+  color: var(--color-white);
+  background-color: var(--color-brown-950);
+  font: var(--text-preset-4-bold);
+  border-radius: 5px;
+  display: none;
+  padding: 4px;
+}
+
 .chart__bar:hover {
   background-color: var(--color-red-300);
+}
+
+.chart__bar:hover::before {
+  display: block;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .chart__bar--highest {
@@ -162,6 +181,10 @@ html, body {
 
   .spending__title {
     font: var(--text-preset-2);
+  }
+
+  .chart__bar-wrapper {
+    gap: 16px;
   }
 
   .chart__bar {
